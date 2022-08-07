@@ -1,4 +1,5 @@
 console.log("Script loaded!");
+console.log(window.location.pathname)
 
 // find the anchor with the href that matches the current url and add a styling class to it 
 currentLinks = document.querySelectorAll('a');
@@ -11,14 +12,17 @@ currentLinks.forEach(function(link) {
 // event handler for clicking to expand an archive 
 // BUG: seems to periodically have the content return NULL, meaning the query select isn't grabbing it
 function showContent (event) {
-  console.log("CLICK")
   content = event.target.parentNode.querySelector('#hide');
-  if (content.classList.contains('hidden')) {
-    content.classList.remove('hidden')
-  } else {
-    content.classList.add('hidden')
-  }
+  arrow = event.target.querySelector('i');
+
+  content.classList.toggle("hidden");
+
+  arrow.classList.toggle("fa-angle-down");
+  arrow.classList.toggle("fa-angle-up");
+
 }
-document.querySelectorAll("#expand").forEach( item => {
-  item.addEventListener("click", showContent);
-})
+if (window.location.pathname == '/archive.html') {
+  document.querySelectorAll("#expand").forEach( item => {
+    item.addEventListener("click", showContent);
+  })
+}
