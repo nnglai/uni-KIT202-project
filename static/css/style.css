@@ -1,11 +1,12 @@
 /* global styles */
 :root {
-  --white: #EBEBEB;
-  --grey: #C0C0C0;
-  --orange: #FF6700;
-  --light-orange: #FF9D5C;
-  --light-blue: #3A6EA5;
-  --blue: #004E98;
+  --white: #E6EBE0;
+  --grey: #CDD7C1;
+  --primary: #ED6A5A;
+  --light-primary: #F39C91;
+  --secondary: #9BC1BC;
+  --tertiary: #F4F1BB;
+  --accent: #36C9C6;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 
 header {
   max-width: 100%;
-  background-color: var(--blue);
+  background-color: var(--secondary);
   display: flex;
   align-items: center;
   padding: 10px 20px;
@@ -44,7 +45,7 @@ header {
 
 /* header link for current page */
 .currentPage {
-  color: var(--orange)
+  color: var(--primary)
 }
 
 /* footer styling */
@@ -52,7 +53,7 @@ header {
 .footer {
   max-width: 100%;
   padding: 20px 70px ;
-  background-color: var(--blue);
+  background-color: var(--secondary);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -76,7 +77,7 @@ header {
   align-items: center;
   margin: 0 180px;
   padding: 40px 10px;
-  background-color: var(--light-blue);
+  background-color: var(--tertiary);
   
 }
 
