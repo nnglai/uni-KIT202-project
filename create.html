@@ -12,7 +12,7 @@
 
   <link rel="stylesheet" href="./static/css/style.css">
 
-  <script src="./static/js/script.js" defer></script>
+  <script src="./static/js/createAPostScript.js" defer></script>
 
   <!-- FontAwesome Kit for Icons -->
   <script src="https://kit.fontawesome.com/5f78ca6619.js" crossorigin="anonymous"></script>
@@ -27,15 +27,41 @@
     <a href="about.html" class="link">About Us</a>
     <a href="archive.html" class="link">Archive</a>
   </header>
+
   <section class="container">
-    
+
+  <form novalidate class="createForm" name="createAPostForm">
+    <label for="tileOfPostField">Title of Post: (Max of 70 Characters)</label>
+    <input type="text" id="tileOfPostField" name="tileOfPostField">
+    <br>
+    <br>
+
+    <label for="tagsField">Enter the tags for the post: (Tags seperated by , )</label>
+    <input type="text" id="tagsField" name="tagsField">
+    <br>
+    <br>
+
+    <label for="contentField">Enter the content of the post:</label>
+    <input type="text" id="contentField" name="contentField">
+    <br>    
+    <br>
+
+    <input type="submit" value="Submit">
+    <input type="reset">
+
+  </form>
+
+  <h2 class="errorMessage" id="errorMessage"></h2>
+
   </section>
+  
   <footer class="footer">
     <div class="social-icons">
       <i class="fab fa-twitter"></i>
       <i class="fab fa-facebook"></i>
       <i class="fab fa-instagram"></i>
       <i class="fab fa-github-alt"></i>
+      
     </div>
     <p class="acknowledgment">We acknowledge and pay respect to the traditional custodians and elders of this nation, past, present and future, and the continuation of cultural, spiritual and educational practices of Aboriginal and Torres Strait Islander peoples.</p>
   </footer>
