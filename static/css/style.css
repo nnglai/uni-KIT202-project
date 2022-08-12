@@ -257,3 +257,7 @@ header {
   color: var(--black);
   cursor: pointer;
 }
+
+.errorMessage {
+  color: red;
+}
