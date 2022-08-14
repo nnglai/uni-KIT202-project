@@ -23,13 +23,14 @@
       <img src="./static/images/temp-logo.png" alt="logo" class="logo">
     </a>
     <a href="login.html" class="link">Login</a>
-    <a href="create.html" class="link">Create a Post!</a>
+    <a href="create.html" class="link" id="currentPage">Create a Post!</a>
     <a href="about.html" class="link">About Us</a>
     <a href="archive.html" class="link">Archive</a>
   </header>
-
+  
   <section class="container">
-
+    <div class="create">
+    <h1>Start Posting</h1>
   <form novalidate class="createForm" name="createAPostForm">
     <label for="tileOfPostField">Title of Post: (Max of 70 Characters)</label>
     <input type="text" id="tileOfPostField" name="tileOfPostField">
@@ -46,12 +47,13 @@
     <br>    
     <br>
 
-    <input type="submit" value="Submit">
-    <input type="reset">
+    <input class="button" type="button" value="Submit">
+    <input class="button" type="reset">
 
   </form>
 
   <h2 class="errorMessage" id="errorMessage"></h2>
+    </div>
 
   </section>
   
